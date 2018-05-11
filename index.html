@@ -1,9 +1,8 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>  
     <title>Zachary's First Website</title>
    
-    </head>
     <style>
             body {
                 background: rgb(235, 0, 20);
@@ -53,56 +52,110 @@
             main {
                 background: rgb(192, 192, 192);
                 display: flex;
+                min-height:245px;
             }
             [class=sidebar] {
                 margin-right: -90px;
                 padding: 15px;
+                
             }
             [class=sidebar] img {
-                width: 487px;
+                width: 350px;
                 border-style: solid;
                 border-width: 2px;
                 border-color: rgb(0,0,0);
+                
             }
             [class=content] {
                 flex: 1;
                 padding: 15px;
-                margin-left: 100px;
+                margin-left: 425px;
+                margin-top:-500px;
+                
             }
             [class=interests] header {
                 font-size: 1.25em;
             }
+            [class=content2] {
+                flex: 1;
+                padding: 15px;
+                margin-left: 435px;
+                margin-top:75px;
+            }
         </style>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+    $(document).ready(function(){
+     $("button").dblclick(function(){
+       $("ul.professional-interests").slideToggle();
+     });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+     $("button").click(function(){
+       $("ul.professional-interests").css('color','rgb(235, 0, 20)');
+       
+     });
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+     $("button").mouseover(function(){
+       $("ul.professional-interests").css('color','black');
+       
+     });
+    });
+  </script>
+  
+    </head>
+      
     <body>
-        <div id=all-contents">
+        <div id="all-contents">
         <nav>
-        <header> Zachary's First Website</header>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        </ul>
+            <header> Zachary's First Website</header>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
         </nav>
         
         <main>
         <div class="sidebar">
-              <img src="<a class="_4-eo _2t9n _50z9" href="https://www.facebook.com/photo.php?fbid=1263612133764190&amp;set=a.101105130014902.1514.100003462452781&amp;type=3&amp;source=11&amp;referrer_profile_id=100003462452781" rel="theater" ajaxify="https://www.facebook.com/photo.php?fbid=1263612133764190&amp;set=a.101105130014902.1514.100003462452781&amp;type=3&amp;source=72&amp;referrer_profile_id=100003462452781&amp;size=422%2C422&amp;player_origin=profile" data-ploi="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20604513_1263612133764190_4403187160345648017_n.jpg?oh=48b07fd8e5f794e04cda541c26d84dfb&amp;oe=5A5EF72A" data-render-location="timeline" style="width:487px;" data-ft="{&quot;tn&quot;:&quot;E&quot;}"><div class="uiScaledImageContainer _517g" style="width:487px;height:487px;"><img class="scaledImageFitWidth img" src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20604513_1263612133764190_4403187160345648017_n.jpg?oh=48b07fd8e5f794e04cda541c26d84dfb&amp;oe=5A5EF72A" alt="Image may contain: 2 people, people smiling" width="487" height="487"></div></a>
+        <img src="Zachary.png"
         </div>
         
-        <div class="content">
-        <h1>Zachary Adams</h1>
-        <p>Student at University Veiw Academy.</p>
+            <div class="content">
+                <h1>Zachary Adams</h1>
+                <p>Student at University Veiw Academy.</p>
         
-       <section class="interest">
-       <header>My Interest</header>
-       <ul>
-       <li>Spending time with family</li>
-       <li>Spending time with friends</li>
-       <li>Playing video games</li>
-       </ul>
-       </section>
-        </div>
+               <section class="interests">
+                   <header>My Interests</header>
+                   <ul>
+                       <li>Spending time with family</li>
+                       <li>Spending time with friends</li>
+                       <li>Playing video games</li>
+                   </ul>
+               </section>
+            </div>
         </main>
+        
+        <main>
+        <div class="content2">
+            <header>Professional Interests</header>
+            <section class="interests">
+                <button>Use me to see my professional interests</button>
+                <ul class="professional-interests">
+                    <li>Website development</li>
+                    <li>Computer maintnence</li>
+                    <li>App building</li>
+                </ul>
+            </section>
         </div>
+    </main>
+     
+    </div>
         
     </body>
 </html>
